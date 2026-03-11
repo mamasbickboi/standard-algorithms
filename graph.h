@@ -253,6 +253,14 @@ i64* dijkstra (Graph* G, char src_name)
 //edge should know their type ?
 //union for size_t and i64 ???
 
+/* TODO
+A*
+dfs stack
+bfs queue
+dfs search
+bfs search
+*/
+
 /*
 // wrapper macro for passing the source file name, line number, and function name to the actual wrapper function
 #define xcalloc(a, b) (xcalloc)((a), (b), __FILE__, __func__, __LINE__)
