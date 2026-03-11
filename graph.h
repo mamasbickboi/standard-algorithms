@@ -185,8 +185,7 @@ void dfs_recursive (Graph* G, char start)
         return;
     }
 
-    bool* visited;
-    visited = (bool*)calloc(G->vertexCount, sizeof(bool));
+    bool* visited = (bool*)calloc(G->vertexCount, sizeof(bool));
 
     __dfs_recursive__(G, visited, itr);
     printf("NULL\n");
