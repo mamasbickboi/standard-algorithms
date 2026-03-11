@@ -1,0 +1,93 @@
+SORTING ALGORITHMS
+bubble
+insertion
+merge
+quick
+
+PATHFINDING ALGORITHMS
+dijkstra
+A*
+
+SEARCHING ALGORITHMS
+binary
+linear
+
+/*struct dijkstraAns
+{
+    i64* distances;
+    Vertex* previous;
+};*/
+
+/*struct dijkstraAns dijkstra (Graph* G, char src)
+{
+    i64 idx = haveVertex(G, src);
+    if (idx == -1)
+    {
+        printf("vertex doesn't exist\n");
+        return;
+    }
+
+    i64* dist;
+    Vertex* prev;
+
+    assert(dist = (i64*)malloc(G->vertexCount * sizeof(i64)));
+    assert(prev = (Vertex*)malloc(G->vertexCount * sizeof(Vertex)));
+
+    Vertex* queue = NULL;
+    size_t Q_size = 0;
+
+    for (size_t i = 0; i < G->vertexCount; ++i)
+    {
+        dist[i] = -1;
+        prev[i] = NULLVERTEX;
+        
+        assert(realloc(queue, (sizeof(Vertex) * Q_size) + 1));
+        queue[Q_size] = G->adjacenyList[i];
+        ++Q_size;
+    }
+
+    dist[idx] = 0;
+
+    while (Q_size)
+    {
+        size_t minIdx = 0;
+
+        for (size_t i = 0; i < G->vertexCount; ++i)
+            if ((dist[i] < minIdx) && (dist[i] > -1))
+                minIdx = i;
+
+        Vertex u = G->adjacenyList[minIdx];
+        assert(memcpy(queue, queue + 1, sizeof(Vertex) * (Q_size - 1)));
+        assert(queue = (Vertex*)realloc(queue, sizeof(Vertex) * (Q_size - 1)));
+        --Q_size;
+
+        for (size_t i = 0; i < G->edgeCount; ++i)
+        {
+            size_t alt = dist[u.graphIndex] + G->
+
+            if (alt < dist[])
+            {
+                dist[] = alt
+                prev[] = //u
+            }
+        }
+    }
+
+    struct dijkstraAns ans;
+    ans.distances = dist;
+    ans.previous = prev;
+
+    return ans;
+}*/
+
+
+/* TODO
+A*
+dfs stack
+bfs queue
+dfs search
+bfs search
+*/
+
+//potentially use union for undefined / inifitiy / idx
+//store pointers in the vertex adjacency list
